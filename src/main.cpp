@@ -43,6 +43,10 @@ int main (int argc, char* argv[]) {
         std::cout << arr[i] << " ";
     }
 
+    int *arr = new int[5];
+    
+    int a[3];
+    a[4] = 0;
 
     return 0;
 }

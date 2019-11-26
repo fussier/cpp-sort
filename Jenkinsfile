@@ -9,7 +9,7 @@ pipeline {
 
     stage('codecheck') {
       steps {
-        sh 'cppcheck -j 4 --enable=all --inconclusive --xml --xml-version=2 SOURCE_DIRECTORY 2> cppcheck.xml'
+        sh 'cppcheck --enable=all --inconclusive --xml --xml-version=2 ./ 2> cppcheck.xml'
       }
     }
 

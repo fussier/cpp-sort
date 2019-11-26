@@ -15,7 +15,7 @@ pipeline {
 
     stage('showcppcheck') {
       steps {
-        publishCppcheck(XSize: 5, YSize: 5, allowNoReport: true, displayErrorSeverity: true, displayAllErrors: true, displayNoCategorySeverity: true, displayPerformanceSeverity: true, displayPortabilitySeverity: true, displayStyleSeverity: true, displayWarningSeverity: true, severityError: true, severityInformation: true, severityNoCategory: true, severityPerformance: true, severityPortability: true, severityStyle: true, severityWarning: true)
+        publishCppcheck(XSize: 5, YSize: 5, allowNoReport: true, displayErrorSeverity: true, displayAllErrors: true, displayNoCategorySeverity: true, displayPerformanceSeverity: true, displayPortabilitySeverity: true, displayStyleSeverity: true, displayWarningSeverity: true, severityError: true, severityInformation: true, severityNoCategory: true, severityPerformance: true, severityPortability: true, severityStyle: true, severityWarning: true, threshold: '0')
       }
     }
 
